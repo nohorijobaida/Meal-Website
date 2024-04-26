@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Meal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Meal Search</title>
 </head>
 <body>
-    
+    <!-- Name: Nohori Jobaida -->
+    <!-- Id: 1931154 -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <ul class="menu">
+            <li><a style="color: black; font-weight:bold;" href="#" onclick="fetchFoodItems()">Food Items</a></li>
+            <li><a style="color: black; font-weight: bold;" href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Feels Like Home <br> 
+                Tastes Like a Paradise</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for a meal...">
+                <button class="searchButton" onclick="searchMeals()">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id="mealResults" class="meal-results">
+            <!-- Meal results will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 1931154-Nohori Jobaida</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
